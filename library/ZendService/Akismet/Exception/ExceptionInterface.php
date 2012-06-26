@@ -20,7 +20,7 @@
  * @version    $Id$
  */
 
-namespace Zend\Service\Akismet;
+namespace Zend\Service\Akismet\Exception;
 
 /**
  * @category   Zend
@@ -28,5 +28,6 @@ namespace Zend\Service\Akismet;
  * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-interface Exception
-{}
+interface ExceptionInterface
+{
+}
