@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace Zend\Service\Akismet\Exception;
+namespace ZendService\Akismet\Exception;
 
 /**
  * @category   Zend

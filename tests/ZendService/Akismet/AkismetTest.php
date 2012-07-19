@@ -8,9 +8,9 @@
  * @package   Zend_Service
  */
 
-namespace ZendTest\Service\Akismet;
+namespace ZendServiceTest\Akismet;
 
-use Zend\Service\Akismet\Akismet;
+use ZendService\Akismet\Akismet;
 use Zend\Http\Client\Adapter\Test as ClientTestAdapter;
 use Zend\Http\Client as HttpClient;
 
@@ -134,7 +134,7 @@ class AkismetTest extends \PHPUnit_Framework_TestCase
                   . "invalid";
         $this->adapter->setResponse($response);
 
-        $this->setExpectedException('Zend\Service\Akismet\Exception\InvalidArgumentException', 'Invalid API key');
+        $this->setExpectedException('ZendService\Akismet\Exception\InvalidArgumentException', 'Invalid API key');
         $this->akismet->isSpam($this->comment);
     }
 
@@ -181,7 +181,7 @@ class AkismetTest extends \PHPUnit_Framework_TestCase
                   . "invalid";
         $this->adapter->setResponse($response);
 
-        $this->setExpectedException('Zend\Service\Akismet\Exception\InvalidArgumentException', 'Invalid API key');
+        $this->setExpectedException('ZendService\Akismet\Exception\InvalidArgumentException', 'Invalid API key');
         $this->akismet->submitSpam($this->comment);
     }
 

@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace Zend\Service\Akismet;
+namespace ZendService\Akismet;
 
 use Zend\Http\Client as HttpClient;
 use Zend\Http\Request as HttpRequest;
@@ -110,7 +110,7 @@ class Akismet
      *
      * @param string $blogUrl
      * @return Zend_Service_Akismet
-     * @throws Zend\Service\Exception if invalid URL provided
+     * @throws ZendService\Exception if invalid URL provided
      */
     public function setBlogUrl($blogUrl)
     {
@@ -177,7 +177,7 @@ class Akismet
      *
      * @param int $port
      * @return Zend_Service_Akismet
-     * @throws Zend\Service\Exception if non-integer value provided
+     * @throws ZendService\Exception if non-integer value provided
      */
     public function setPort($port)
     {
@@ -206,7 +206,7 @@ class Akismet
      *
      * @param string $userAgent
      * @return Zend_Service_Akismet
-     * @throws Zend\Service\Exception with invalid user agent string
+     * @throws ZendService\Exception with invalid user agent string
      */
     public function setUserAgent($userAgent)
     {
@@ -271,7 +271,7 @@ class Akismet
      *
      * @param array $params
      * @return boolean
-     * @throws Zend\Service\Exception with invalid API key
+     * @throws ZendService\Exception with invalid API key
      */
     public function isSpam($params)
     {
@@ -301,7 +301,7 @@ class Akismet
      *
      * @param array $params
      * @return void
-     * @throws Zend\Service\Exception with invalid API key
+     * @throws ZendService\Exception with invalid API key
      */
     public function submitSpam($params)
     {
@@ -341,7 +341,7 @@ class Akismet
      * @param string $path
      * @param array $params
      * @return Zend\Http\Response
-     * @throws Zend\Service\Exception if missing user_ip or user_agent fields
+     * @throws ZendService\Exception if missing user_ip or user_agent fields
      */
     protected function makeApiCall($path, $params)
     {
