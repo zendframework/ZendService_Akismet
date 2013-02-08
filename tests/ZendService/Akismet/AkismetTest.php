@@ -92,7 +92,7 @@ class AkismetTest extends \PHPUnit_Framework_TestCase
 
     public function testUserAgentDefaultMatchesFrameworkVersion()
     {
-        $this->assertContains('Zend Framework/' . \Zend\Version::VERSION, $this->akismet->getUserAgent());
+        $this->assertContains('Zend Framework/' . \Zend\Version\Version::VERSION, $this->akismet->getUserAgent());
     }
 
     public function testVerifyKey()
