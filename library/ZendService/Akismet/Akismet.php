@@ -70,7 +70,7 @@ class Akismet
         $this->setBlogUrl($blog);
         $this->setApiKey($apiKey);
         $this->setHttpClient(($httpClient) ?: new HttpClient);
-        $this->setUserAgent('Zend Framework/' . \Zend\Version::VERSION . ' | Akismet/1.11');
+        $this->setUserAgent('Zend Framework/' . \Zend\Version\Version::VERSION . ' | Akismet/1.11');
     }
 
     /**
