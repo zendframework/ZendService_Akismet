@@ -1,5 +1,9 @@
 ZendService\Akismet component
 
+> ## Repository abandoned 2019-12-05
+>
+> This package is no longer maintained. Find alternatives at https://packagist.org/?query=akismet
+
 You can install using:
 
 ```
